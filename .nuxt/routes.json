@@ -1,0 +1,50 @@
+[
+  {
+    "name": "caddieReport",
+    "path": "/caddieReport",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/caddieReport.vue",
+    "chunkName": "pages/caddieReport"
+  },
+  {
+    "name": "caddieView",
+    "path": "/caddieView",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/caddieView.vue",
+    "chunkName": "pages/caddieView"
+  },
+  {
+    "name": "dishpit",
+    "path": "/dishpit",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/dishpit.vue",
+    "chunkName": "pages/dishpit"
+  },
+  {
+    "name": "golfServicesView",
+    "path": "/golfServicesView",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/golfServicesView.vue",
+    "chunkName": "pages/golfServicesView"
+  },
+  {
+    "name": "managerView",
+    "path": "/managerView",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/managerView.vue",
+    "chunkName": "pages/managerView"
+  },
+  {
+    "name": "statusBusCart",
+    "path": "/statusBusCart",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/statusBusCart.vue",
+    "chunkName": "pages/statusBusCart"
+  },
+  {
+    "name": "updateBusCart",
+    "path": "/updateBusCart",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/updateBusCart.vue",
+    "chunkName": "pages/updateBusCart"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

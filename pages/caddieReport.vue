@@ -1,0 +1,3 @@
+<template>
+<caddieReport></caddieReport>
+</template>

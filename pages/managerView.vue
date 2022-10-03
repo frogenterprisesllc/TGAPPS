@@ -1,0 +1,3 @@
+<template>
+<managerView></managerView>
+</template>

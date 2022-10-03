@@ -1,0 +1,3 @@
+<template>
+<gsView></gsView>
+</template>

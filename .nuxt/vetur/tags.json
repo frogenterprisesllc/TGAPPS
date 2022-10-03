@@ -1,0 +1,77 @@
+{
+  "Analytics": {
+    "description": "Auto imported from components/analytics.vue"
+  },
+  "BusCart": {
+    "description": "Auto imported from components/busCart.vue"
+  },
+  "BuscartPicker": {
+    "description": "Auto imported from components/buscartPicker.vue"
+  },
+  "CaddieFloorBackup": {
+    "description": "Auto imported from components/caddieFloorBackup.vue"
+  },
+  "CaddieFloorView": {
+    "description": "Auto imported from components/caddieFloorView.vue"
+  },
+  "CaddieReport": {
+    "description": "Auto imported from components/caddieReport.vue"
+  },
+  "CaddieView": {
+    "description": "Auto imported from components/caddieView.vue"
+  },
+  "DishpitView": {
+    "description": "Auto imported from components/dishpitView.vue"
+  },
+  "GenericVueComponent": {
+    "description": "Auto imported from components/genericVueComponent.vue"
+  },
+  "GsView": {
+    "description": "Auto imported from components/gsView.vue"
+  },
+  "ManagerView": {
+    "description": "Auto imported from components/managerView.vue"
+  },
+  "RedYellowGreenSelector": {
+    "description": "Auto imported from components/redYellowGreenSelector.vue"
+  },
+  "StatusBusCart": {
+    "description": "Auto imported from components/statusBusCart.vue"
+  },
+  "Test": {
+    "description": "Auto imported from components/test.vue"
+  },
+  "UpdateBusCartRYG": {
+    "description": "Auto imported from components/updateBusCartRYG.vue"
+  },
+  "PartsBottomBin": {
+    "description": "Auto imported from components/parts/BottomBin.vue"
+  },
+  "PartsBottomShelf": {
+    "description": "Auto imported from components/parts/BottomShelf.vue"
+  },
+  "PartsCart": {
+    "description": "Auto imported from components/parts/Cart.vue"
+  },
+  "PartsLinens": {
+    "description": "Auto imported from components/parts/Linens.vue"
+  },
+  "PartsLiquids": {
+    "description": "Auto imported from components/parts/Liquids.vue"
+  },
+  "PartsSecondShelf": {
+    "description": "Auto imported from components/parts/SecondShelf.vue"
+  },
+  "PartsSilverware": {
+    "description": "Auto imported from components/parts/Silverware.vue"
+  },
+  "PartsTopBin": {
+    "description": "Auto imported from components/parts/TopBin.vue"
+  },
+  "PartsTowels": {
+    "description": "Auto imported from components/parts/Towels.vue"
+  },
+  "PartsTrash": {
+    "description": "Auto imported from components/parts/Trash.vue"
+  }
+}
