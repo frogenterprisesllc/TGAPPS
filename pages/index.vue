@@ -52,11 +52,7 @@ export default {
 
 
   methods: {
-    async fixColors(){
-
-      const ip = await this.$axios.$put('/api/fixColors')
-      this.ip = ip
-    }
+    
 // fetching Data
     // async grabBCData() {
     //   const response = await this.$axios.$get('/api/readAllBusCarts');
@@ -68,7 +64,7 @@ export default {
 
 },
 mounted(){
-  this.fixColors()
+
 }
 //Lifecycle Hooks: beforeCreate, created, beforeMount, mounted, beforeUPdate, updated, beforeDestroy, destroyed
 // mounted() {
