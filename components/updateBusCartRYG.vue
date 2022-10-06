@@ -100,7 +100,7 @@ export default {
 
   methods: {
     changeBayParent(bay) {
-      console.log("changeBAyParent")
+
       this.buscartNum = bay
       this.panel = []
       this.platesColor = this.bcData[bay]['dishes']
@@ -155,11 +155,8 @@ export default {
   },
   //Lifecycle Hooks: beforeCreate, created, beforeMount, mounted, beforeUPdate, updated, beforeDestroy, destroyed
   mounted() {
-    console.log("MountedBaby");
+
     this.grabBCData();
-
-    console.log("CalledThatData")
-
 
   }
 };

@@ -136,7 +136,7 @@ export default {
     //called when firstname changes value
     // firstName: function (value, oldValue) {...}
     theColor: function(newVal,oldVal){
-      if(this.firstTime == false){
+
         if (newVal == 'yellow') {
           this.clickedYellow()
 
@@ -147,7 +147,7 @@ export default {
         else if (newVal == 'green'){
           this.clickedGreen()
         }
-      }
+
     }
   },
 
@@ -157,34 +157,51 @@ export default {
       show1 = true
     },
     async clickedRed() {
-      this.firstTime == false;
-      this.color = 'red';
+      if (this.firstTime == true) {
+        this.firstTime = false;
+        this.color = 'red';
+      }
+      else {
+        this.color = 'red';
       const ip = await this.$axios.$put('/api/updateBC', {
         name: this.theBay,
         key: this.theKey,
         val: "red"
       })
       this.ip = ip
+    }
     },
     async clickedYellow() {
-      this.firstTime == false;
-      this.color = 'yellow';
-      const ip = await this.$axios.$put('/api/updateBC', {
-        name: this.theBay,
-        key: this.theKey,
-        val: "yellow"
-      })
-      this.ip = ip
+      if(this.firstTime == true){
+        this.firstTime = false;
+        this.color = 'yellow';
+      }
+      else{
+
+        this.color = 'yellow';
+        const ip = await this.$axios.$put('/api/updateBC', {
+          name: this.theBay,
+          key: this.theKey,
+          val: "yellow"
+        })
+        this.ip = ip
+      }
     },
     async clickedGreen() {
-      this.firstTime == false;
-      this.color = 'green';
-      const ip = await this.$axios.$put('/api/updateBC', {
-        name: this.theBay,
-        key: this.theKey,
-        val: "green"
-      })
-      this.ip = ip
+      if (this.firstTime == true){
+        this.firstTime = false;
+        this.color = 'green';
+      }
+      else{
+        this.color = 'green';
+        const ip = await this.$axios.$put('/api/updateBC', {
+          name: this.theBay,
+          key: this.theKey,
+          val: "green"
+        })
+        this.ip = ip
+      }
+
     },
 
 },
@@ -198,7 +215,7 @@ updated() {
 },
 mounted() {
   this.color = this.theColor
-  console.log('Mounted')
+
 }
 
 };
