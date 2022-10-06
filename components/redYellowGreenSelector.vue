@@ -136,15 +136,17 @@ export default {
     //called when firstname changes value
     // firstName: function (value, oldValue) {...}
     theColor: function(newVal,oldVal){
-      if (newVal == 'yellow') {
-        this.clickedYellow()
+      if(this.firstTime == false){
+        if (newVal == 'yellow') {
+          this.clickedYellow()
 
-      }
-      else if (newVal == 'red'){
-        this.clickedRed()
-      }
-      else if (newVal == 'green'){
-        this.clickedGreen()
+        }
+        else if (newVal == 'red'){
+          this.clickedRed()
+        }
+        else if (newVal == 'green'){
+          this.clickedGreen()
+        }
       }
     }
   },
