@@ -3,48 +3,56 @@
     "name": "caddieReport",
     "path": "/caddieReport",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/caddieReport.vue",
-    "chunkName": "pages/caddieReport"
+    "chunkName": "pages/caddieReport",
+    "_name": "_0583eeb2"
   },
   {
     "name": "caddieView",
     "path": "/caddieView",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/caddieView.vue",
-    "chunkName": "pages/caddieView"
+    "chunkName": "pages/caddieView",
+    "_name": "_4ee895ba"
   },
   {
     "name": "dishpit",
     "path": "/dishpit",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/dishpit.vue",
-    "chunkName": "pages/dishpit"
+    "chunkName": "pages/dishpit",
+    "_name": "_706ebbe6"
   },
   {
     "name": "golfServicesView",
     "path": "/golfServicesView",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/golfServicesView.vue",
-    "chunkName": "pages/golfServicesView"
+    "chunkName": "pages/golfServicesView",
+    "_name": "_47fa1209"
   },
   {
     "name": "managerView",
     "path": "/managerView",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/managerView.vue",
-    "chunkName": "pages/managerView"
+    "chunkName": "pages/managerView",
+    "_name": "_064881be"
   },
   {
     "name": "statusBusCart",
     "path": "/statusBusCart",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/statusBusCart.vue",
-    "chunkName": "pages/statusBusCart"
+    "chunkName": "pages/statusBusCart",
+    "_name": "_72fc883a"
   },
   {
     "name": "updateBusCart",
     "path": "/updateBusCart",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/updateBusCart.vue",
-    "chunkName": "pages/updateBusCart"
+    "chunkName": "pages/updateBusCart",
+    "_name": "_7deb0303"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_6d515cc4"
   }
 ]
