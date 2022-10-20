@@ -32,6 +32,11 @@
     <v-spacer></v-spacer>
   </v-container>
 
+  <v-container>
+    <events></events>
+
+  </v-container>
+
   <v-container class='grey darken-4'>
     <v-row>
       <v-spacer></v-spacer>

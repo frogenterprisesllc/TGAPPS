@@ -23,6 +23,12 @@
   "DishpitView": {
     "description": "Auto imported from components/dishpitView.vue"
   },
+  "EventStepper": {
+    "description": "Auto imported from components/eventStepper.vue"
+  },
+  "Events": {
+    "description": "Auto imported from components/events.vue"
+  },
   "GenericVueComponent": {
     "description": "Auto imported from components/genericVueComponent.vue"
   },

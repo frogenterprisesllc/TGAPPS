@@ -14,6 +14,8 @@ You can directly use them in pages and other components without the need to impo
 - `<CaddieReport>` | `<caddie-report>` (components/caddieReport.vue)
 - `<CaddieView>` | `<caddie-view>` (components/caddieView.vue)
 - `<DishpitView>` | `<dishpit-view>` (components/dishpitView.vue)
+- `<EventStepper>` | `<event-stepper>` (components/eventStepper.vue)
+- `<Events>` | `<events>` (components/events.vue)
 - `<GenericVueComponent>` | `<generic-vue-component>` (components/genericVueComponent.vue)
 - `<GsView>` | `<gs-view>` (components/gsView.vue)
 - `<ManagerView>` | `<manager-view>` (components/managerView.vue)

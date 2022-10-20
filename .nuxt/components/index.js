@@ -6,6 +6,8 @@ export { default as CaddieFloorView } from '../../components/caddieFloorView.vue
 export { default as CaddieReport } from '../../components/caddieReport.vue'
 export { default as CaddieView } from '../../components/caddieView.vue'
 export { default as DishpitView } from '../../components/dishpitView.vue'
+export { default as EventStepper } from '../../components/eventStepper.vue'
+export { default as Events } from '../../components/events.vue'
 export { default as GenericVueComponent } from '../../components/genericVueComponent.vue'
 export { default as GsView } from '../../components/gsView.vue'
 export { default as ManagerView } from '../../components/managerView.vue'
