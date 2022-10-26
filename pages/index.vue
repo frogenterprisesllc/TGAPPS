@@ -1,10 +1,15 @@
 <template>
   <div>
   <h1> Welcome!!! </h1>
-  <span>Objective: Get out as close to closing time as possible </span>
-  <span> UpdateBusCart: used by Bayhosts to track buscart status </span>
-  <span> Caddie View: used by ShiftLeads to plan carts accordingly </span>
-  <span> Dishpit View: used by Dish team so they can plan accordingly</span>
+
+  <span> UPDATE_BUSCART: used by Bayhosts to track buscart status </span>
+  <span> CADDIE_VIEW: used by ShiftLeads to plan carts accordingly </span>
+  <span> DISHPIT_VIEW: used by Dish team so they can plan accordingly</span>
+  <span> GS_VIEW: used by GS team to update when bays are sat </span>
+  <span> MANAGER_VIEW: used by managment to ensure all bays and events are spoken to </span>
+  <v-divider></v-divider>
+  <v-img src="AlbertCamus.jpg"></v-img>
+
 
 </div>
 </template>
@@ -52,7 +57,7 @@ export default {
 
 
   methods: {
-    
+
 // fetching Data
     // async grabBCData() {
     //   const response = await this.$axios.$get('/api/readAllBusCarts');

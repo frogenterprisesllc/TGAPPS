@@ -5,11 +5,15 @@ export default {
   head: {
     script: [
       {
-        src: "https://cdn.plot.ly/plotly-2.12.1.min.js"
+        src: "https://cdn.plot.ly/plotly-2.12.1.min.js",
+
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/vue-capture/dist/vue-capture.umd.min.js"
       }
     ],
-    titleTemplate: '%s - Learning',
-    title: 'Learning',
+    titleTemplate: 'TGApps',
+    title: 'TGApps',
     htmlAttrs: {
       lang: 'en'
     },

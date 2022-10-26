@@ -1,0 +1,3 @@
+<template>
+<buildingWalk></buildingWalk>
+</template>

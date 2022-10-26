@@ -1,4 +1,5 @@
 export { default as Analytics } from '../../components/analytics.vue'
+export { default as BuildingWalk } from '../../components/buildingWalk.vue'
 export { default as BusCart } from '../../components/busCart.vue'
 export { default as BuscartPicker } from '../../components/buscartPicker.vue'
 export { default as CaddieFloorBackup } from '../../components/caddieFloorBackup.vue'

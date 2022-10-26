@@ -22,13 +22,29 @@ dark
 
 v-bind="attrs"
 v-on="on"
-:color="color"
+:color="theColor"
 class="mt-3"
 
 
 >
 
  </v-btn>
+ <v-btn
+ v-else
+ fab
+ dark
+
+ v-bind="attrs"
+ v-on="on"
+ :color="color"
+ class="mt-3"
+
+
+ >
+
+  </v-btn>
+
+
 
 
 
@@ -95,7 +111,7 @@ export default {
       firstTime: true,
       on: null,
       attrs: null,
-      color: null,
+      color: 'purple',
 
 }
 
@@ -107,15 +123,12 @@ export default {
     theColor: String,
     theBay: String,
     theKey: String
-    // message: String,
-    // product: Object,
-    // email: {
-      // type: String
-      // required: true,
-      // default: 'none'
-      // validator: function (value) {
-      //   return true if valid
-      // }
+
+  },
+  setup(props, context){
+    // this.color = props['theColor']
+    console.log(props['theColor'])
+
   },
   computed: {
     computedColorVariable: function() {
@@ -126,7 +139,7 @@ export default {
       else {
         console.log("asdssd")
 
-        return this.colorr
+        return this.color
       }
     }
     // fullName: function () {
@@ -135,20 +148,7 @@ export default {
   watch: {
     //called when firstname changes value
     // firstName: function (value, oldValue) {...}
-    theColor: function(newVal,oldVal){
 
-        if (newVal == 'yellow') {
-          this.clickedYellow()
-
-        }
-        else if (newVal == 'red'){
-          this.clickedRed()
-        }
-        else if (newVal == 'green'){
-          this.clickedGreen()
-        }
-
-    }
   },
 
 
@@ -157,11 +157,7 @@ export default {
       show1 = true
     },
     async clickedRed() {
-      if (this.firstTime == true) {
-        this.firstTime = false;
-        this.color = 'red';
-      }
-      else {
+        this.firstTime = false
         this.color = 'red';
       const ip = await this.$axios.$put('/api/updateBC', {
         name: this.theBay,
@@ -169,15 +165,11 @@ export default {
         val: "red"
       })
       this.ip = ip
-    }
+
     },
     async clickedYellow() {
-      if(this.firstTime == true){
-        this.firstTime = false;
-        this.color = 'yellow';
-      }
-      else{
 
+      this.firstTime = false
         this.color = 'yellow';
         const ip = await this.$axios.$put('/api/updateBC', {
           name: this.theBay,
@@ -185,14 +177,10 @@ export default {
           val: "yellow"
         })
         this.ip = ip
-      }
+
     },
     async clickedGreen() {
-      if (this.firstTime == true){
-        this.firstTime = false;
-        this.color = 'green';
-      }
-      else{
+this.firstTime = false
         this.color = 'green';
         const ip = await this.$axios.$put('/api/updateBC', {
           name: this.theBay,
@@ -200,21 +188,22 @@ export default {
           val: "green"
         })
         this.ip = ip
-      }
+
 
     },
 
 },
+
 //Lifecycle Hooks: beforeCreate, created, beforeMount, mounted, beforeUPdate, updated, beforeDestroy, destroyed
 beforeCreate() {
-  console.log("HEREREERERE!!!")
+
 
 },
 updated() {
   console.log('updated')
 },
 mounted() {
-  this.color = this.theColor
+
 
 }
 

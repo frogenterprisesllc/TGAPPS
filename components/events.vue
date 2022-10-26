@@ -4,6 +4,7 @@
       <v-expansion-panels popout>
         <v-expansion-panel
           v-for="event_ in events"
+          class='green darken-4'
         >
           <v-expansion-panel-header>{{event_['name']}}</v-expansion-panel-header>
           <v-expansion-panel-content>
@@ -61,7 +62,7 @@ export default {
   "endtime": "2022-10-14 20:00:00",
   "hosts": "Jake and Kirk",
   "key": "yk0e130bragw",
-  "name": "Frog Party",
+  "name": "Example Party",
   "startingBay": "201",
   "starttime": "2022-10-14 18:00:00"
 }

@@ -34,71 +34,107 @@
 
   <v-container>
     <events></events>
-
   </v-container>
 
-  <v-container class='grey darken-4'>
+  <v-container class=' mt-2'>
+    <v-row justify="center">
+        <v-expansion-panels popout >
+          <v-expansion-panel
+          class='blue darken-4'
+          >
+            <v-expansion-panel-header>Bays: Zero Touches</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-chip v-for='bay in zeroTouches'
+              class='red black--text'
+              @click="touched0Bay(bay)"
+              >
+                {{bay}}
+
+              </v-chip>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-row>
     <v-row>
       <v-spacer></v-spacer>
-      <v-col cols=5>
-    <span> Zero Touches </span>
-  </v-col>
+
   <v-spacer></v-spacer>
   </v-row>
-    <v-chip v-for='bay in zeroTouches'
-    class='red black--text'
-    >
-      {{bay}}
-
-    </v-chip>
   </v-container>
 
-  <v-container class='grey darken-4 mt-2'>
+  <v-container class=' mt-2'>
+    <v-row justify="center">
+        <v-expansion-panels popout>
+          <v-expansion-panel
+          class='blue darken-4'
+          >
+            <v-expansion-panel-header> Bays: One Touch </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-chip v-for='bay in oneTouch'
+              class='blue black--text'
+              >
+                {{bay}}
+
+              </v-chip>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-row>
     <v-row>
       <v-spacer></v-spacer>
-      <v-col cols=5>
-    <span> One Touch </span>
-  </v-col>
+
   <v-spacer></v-spacer>
   </v-row>
-    <v-chip v-for='bay in oneTouch'
-    class='blue black--text'
-    >
-      {{bay}}
-
-    </v-chip>
   </v-container>
 
-  <v-container class='grey darken-4 mt-2'>
+  <v-container class=' mt-2'>
+    <v-row justify="center">
+        <v-expansion-panels popout >
+          <v-expansion-panel
+          class='blue darken-4'
+          >
+            <v-expansion-panel-header>Bays: 2+ Touches </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-chip v-for='bay in twoTouch'
+              class='yellow accent-2 black--text'
+              >
+                {{bay}}
+
+              </v-chip>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-row>
     <v-row>
       <v-spacer></v-spacer>
-      <v-col cols=5>
-    <span> 2+ Touches </span>
-  </v-col>
+
   <v-spacer></v-spacer>
   </v-row>
-    <v-chip v-for='bay in twoTouch'
-    class='green black--text'
-    >
-      {{bay}}
-
-    </v-chip>
   </v-container>
 
-  <v-container class='grey darken-4 mt-2'>
+  <v-container class=' mt-2'>
+    <v-row justify="center">
+        <v-expansion-panels popout >
+          <v-expansion-panel
+          class='blue darken-4'
+          >
+            <v-expansion-panel-header>Bays: Empty </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-chip v-for='bay in emptyBays'
+              class='white black--text'
+              >
+                {{bay}}
+
+              </v-chip>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-row>
     <v-row>
       <v-spacer></v-spacer>
-      <v-col cols=5>
-    <span> Empty Bays </span>
-  </v-col>
+
   <v-spacer></v-spacer>
   </v-row>
-    <v-chip v-for='bay in emptyBays'
-    class='white black--text'
-    >
-      {{bay}}
-
-    </v-chip>
   </v-container>
 </div>
 </template>
@@ -152,6 +188,19 @@ export default {
   methods: {
     changeFloor(val){
       this.curFloor = val
+    },
+    async touched0Bay(bay){
+      console.log("double clicked zero")
+      this.zeroTouches = this.zeroTouches.filter(function(item){
+        return item !== bay
+      });
+      this.oneTouch.push(bay)
+      const ip = await this.$axios.$put('/api/updateBay', {
+        name: bay,
+        key: 'status',
+        val: "1Touch"
+      })
+
     }
 // fetching Data
     // async grabBCData() {
@@ -180,26 +229,6 @@ export default {
 <style scoped>
 
 
-/*
-vuetify styling
-
-ranges from 0-16
-{property} {direction} -{size}
-property is type of spacing, m for margin p for padding
-direction designates the side the property applies to
-t (top)
-b (bottom)
-l (left)
-r (right)
-x (left and right )
-y (top and bottom)
-a (all directions)
-size (1-16)
-1 is 4px, 2 is 8 px, n1 is -4 px or auto
-
-with breakpoints for screen sizes, xs, sm, md, lg, xl
-
-{property}{direction}-{breakpoint}-{size} */
 
 
 </style>

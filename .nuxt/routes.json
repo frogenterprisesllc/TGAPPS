@@ -1,5 +1,12 @@
 [
   {
+    "name": "buildingWalk",
+    "path": "/buildingWalk",
+    "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/buildingWalk.vue",
+    "chunkName": "pages/buildingWalk",
+    "_name": "_00426dfe"
+  },
+  {
     "name": "caddieReport",
     "path": "/caddieReport",
     "component": "/Users/frogenterprisesllc/PROJECTS_FOR_MONEY/Topgolf/BusCartsFront/pages/caddieReport.vue",

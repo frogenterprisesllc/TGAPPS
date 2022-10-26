@@ -2,6 +2,9 @@
   "Analytics": {
     "description": "Auto imported from components/analytics.vue"
   },
+  "BuildingWalk": {
+    "description": "Auto imported from components/buildingWalk.vue"
+  },
   "BusCart": {
     "description": "Auto imported from components/busCart.vue"
   },

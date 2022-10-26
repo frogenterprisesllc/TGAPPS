@@ -144,7 +144,7 @@ export default {
       const ip = await this.$axios.$put('/api/updateBay', {
         name: this.curBay,
         key: this.status,
-        val: "Just Sat"
+        val: "0Touch"
       })
     }
     },

@@ -95,11 +95,11 @@ export default {
           title: 'Caddie View',
           to: '/caddieView'
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Caddie Report',
-          to: '/caddieReport'
-        },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Caddie Report',
+        //   to: '/caddieReport'
+        // },
         {
           icon: 'mdi-chart-bubble',
           title: 'GS View',
@@ -109,7 +109,12 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Manager View',
           to: '/managerView'
-        }
+        },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'BuildingWalk',
+        //   to: '/buildingWalk'
+        // }
       ],
       miniVariant: false,
       right: true,
