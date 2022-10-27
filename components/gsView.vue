@@ -134,7 +134,9 @@ export default {
       console.log("ChangedCurrentFloor to ", value)
     },
     async grabData(){
+      console.log("dbugging")
       const response = await this.$axios.$get('/api/gsView');
+      console.log("here")
       this.dataFromAPI = response
 
     },
